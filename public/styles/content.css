@@ -1,0 +1,53 @@
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 3rem;
+    grid-auto-rows: 230px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: sans-serif;
+}
+
+.post {
+    background-color: bisque;
+    border: solid black;
+    text-align: center;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.post-links button {
+    margin: 50px;
+}
+
+.form {
+    
+    margin-top: 100px;
+    background-color: bisque;
+    border: solid black;
+    overflow: auto;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    margin-left: 550px;
+}
+
+#about {
+    
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.about-div {
+    padding: 30px;
+}
+
+.container {
+    padding-top: 50px;
+}

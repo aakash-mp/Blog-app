@@ -1,0 +1,31 @@
+.button {
+    padding: 5px 10px;
+    background-color: #ff8400; /* Edit button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #b3002d; /* Edit button color on hover */
+}
+
+.new-button {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.form form label,
+.form form input,
+.form form textarea,
+.form form button {
+    margin-bottom: 10px; /* Add margin between each item */
+}
+
+.index-body, .edit-post-body, .new-post-body, .about-body {
+    background-color: #bb5938;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/styles/layout.css"> 
+    <link rel="stylesheet" href="/styles/content.css">
+</head>
+<body class="index-body">
+    <%- include("partials/header.ejs") %>
+    <div class="content">
+        <h1>Welcome to All About Fitness</h1>
+        <p id="intro-para">
+            Discover the key to a healthier and happier lifestyle with All About Fitness. 
+            Our mission is to provide you with valuable insights and expert advice on fitness, nutrition, and mental well-being.
+        </p>
+    </div>
+
+    <div class="posts-container">
+        <% posts.forEach((post, index) => { %>
+            <div class="post">
+                <h2> <b> <%= post.title %></b></h2>
+                <p><%= post.content %></p>
+                <div class="post-links">
+                    <button class="button edit-button" onclick="location.href='/edit/<%= index %>'">Edit</button>
+                    <button class="button delete-button" onclick="location.href='/delete/<%= index %>'">Delete</button>
+                </div>                
+            </div>
+        <% }); %>
+    </div>
+    <div class="new-button">
+             <button class="button new-post-button" onclick="location.href='/new/'">Create New Post</button>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
